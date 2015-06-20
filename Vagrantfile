@@ -70,5 +70,6 @@ Vagrant.configure(2) do |config|
   # SHELL
   config.vm.provision "shell", path: "scripts/installRinse.sh"
   config.vm.provision "shell", path: "scripts/installMkImage.sh"
+  config.vm.provision "shell", path: "scripts/buildBaseImage.sh"
 
 end
