@@ -44,7 +44,7 @@ A docker managed script that can create base images from fully installed distrib
 The base image is a simple tarball. You can import it in any docker installation:
 
 ~~~~
-$ cat dockercentos.tar | docker load
+$ docker load < dockercentos.tar
 ~~~~  
 
 ## References
