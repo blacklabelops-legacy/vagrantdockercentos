@@ -1,4 +1,4 @@
-# BlackLabelOps/DockerCentOS
+# BlackLabelOps/VagrantDockerCentOS
 
 Building Docker CentOS 7.x Base Image from a Vagrant box.
 
