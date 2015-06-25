@@ -2,8 +2,6 @@
 
 Building Docker CentOS 7.x Base Image from a Vagrant box.
 
-Builds the [blacklabelops/centos](https://registry.hub.docker.com/u/blacklabelops/centos/) container on [Docker Hub](https://registry.hub.docker.com).
-
 Features:
 
 * Automatically dumps the base image in project folder.
