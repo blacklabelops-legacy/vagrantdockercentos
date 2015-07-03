@@ -1,10 +1,9 @@
 # BlackLabelOps/VagrantDockerCentOS
 
-Building Docker CentOS 7.x Base Image from a Vagrant box.
+Building Docker CentOS 7.x Base Image with Rinse in a Vagrant box.
 
 Features:
 
-* Automatically dumps the base image in project folder.
 * Tested On: Vagrant 1.7.2, Virtualbox 4.3.28
 * Includes: CentOS 7.1
 
@@ -19,13 +18,33 @@ Simply pull from Atlas and use the box!
 
 ~~~~
 $ vagrant up
+$ vagrant ssh
+$ cd /vagrant
+$ ./scripts/buildBaseImage.sh
 ~~~~    
+
+The script calls Rinse with the following parameters:
+ 
+* --distribution centos-7 
+* --arch amd64
+
+Currently, the script does not take parameters. You have to adjust the parameters inside the script.
+
+In order to get a list of distributions call
+
+~~~~
+$ rinse --list-distributions
+~~~~  
+
+The package lists are situated at /etc/rinse/.
 
 ## How it Works
 
-The Vagrantfile includes scripts that installs the required software and scripts. Afterwards the creation script is triggered and the image is available in the internal Docker.
+The Vagrantfile includes scripts that installs the required software and scripts. 
 
-Finally the build scripts exports the image and puts it inside the project folder outfide the machine.
+Afterwards you manually trigger the creation script and the image is available in the internal Docker.
+
+Finally the build scripts exports the image and puts it inside the project folder outside the machine.
 
 ### Scripts
 
