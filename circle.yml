@@ -1,0 +1,14 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker version
+    - docker info
+    - docker build -t="blacklabelops/centos-systemd" .
+    - docker images
+
+test:
+  override:
+    - docker run -d --name="centosbase" blacklabelops/centos-systemd bash
