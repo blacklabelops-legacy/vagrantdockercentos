@@ -1,0 +1,6 @@
+.git
+.vagrant
+scripts
+README.md
+*.img
+*.tar
