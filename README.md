@@ -74,3 +74,7 @@ $ docker load < dockercentos.tar
 
 
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/blacklabelops/vagrantdockercentos/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
